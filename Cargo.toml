@@ -1,0 +1,17 @@
+[package]
+name = "pandas"
+version = "0.1.0"
+authors = ["Mukesh Singh"]
+description = "This crate is inspired from pandas which is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the Apache License 2.0."
+license = "Apache-2.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
